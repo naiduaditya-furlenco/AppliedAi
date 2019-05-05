@@ -1,0 +1,29 @@
+1). Python 3.6 or above.
+
+2). Anaconda (package management system which is very very useful)
+
+    	- This automatically installs a package called iPython notebook. It is used extensively in this course and is an GUI on which code is written.
+    	
+    	- Command to launch this notebook: jupyter notebook
+    	
+3).  pandas
+
+4).  matplotlib
+
+5).  nltk
+
+6).  numpy
+
+7).  scipy
+
+8).  scikit-learn
+
+9).  seaborn
+
+10). tensorflow
+
+11). keras
+
+12). Pillow
+
+13). plotly
