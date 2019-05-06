@@ -1,0 +1,70 @@
+1). Why python?
+
+	- Easy to learn
+	
+	- Best packages for ML/AI makes coding simple
+	
+	- iPython notebooks (Can mix code with comments)
+	
+	- Extensively used in the industry.
+	
+2). Python keywords: Reserved words in python.
+
+3). Python identifiers: Name given to entities like class, functions, variables etc,.
+
+4). Variable and data types in python:
+
+	- Don't need to declare data type of a variable when creating a variable.
+	
+	- Everything in python has a data type. Everything is an object in python.
+	
+	- Numbers: int, float, complex
+	
+	- String: Sequence of unicode characters with 0 based indexing. They are immutable.
+	
+	- List: Ordered sequence of items. (Can contain items of different data types at the same time). They are mutable. Declare: []
+	
+	- Tuple: Ordered sequence of items same as list but they are immutable. They cannot be changed once created. Declare:()
+	
+	- Set: Unordered collection of unique items. Declare: {}. We can perform operations like union, intersection etc,. Set objects do not
+		  support indexing as they are unordered collection of items so we cannot access a particular element.
+		  
+	- Dictionary: Like a map or a hashtable to store key value pairs.
+	
+	- You can convert one data type to another like float to int. Also, one seuence to another like string to list of char.
+	
+5). Python Standard I/O
+
+	
+	- print  (doesn't work without prantheses. Used to work in earlier versions but not anymore.)
+	
+	- print().format() to format an output
+	
+	- num = input("Enter a number: ")
+	
+6). Python Operators
+
+
+	-Logical: and, or, not
+	
+	-Bitwise ops:  a & b AND
+				   a | b  OR
+				   !a     NOT
+	
+    -is opertor:  a = 5  b= 5   a is b returns true
+				  a = "aa" b= "aa" a is b return true
+				  a = [1,2,3] b = [1,2,3] a is b returns FALSE
+	
+	
+	-Membership operator is: Returns true if value present in sequence.	
+			  
+7). If, elif, else condition: 0, none and false are taken as false.	Everything else is considered as true.
+
+				 
+	
+	
+				
+
+
+	
+	
