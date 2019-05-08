@@ -1,0 +1,80 @@
+1). LIST -- Mutable and indexable sequence of elements.
+
+	- append(element): Insert element to end of list
+
+	- insert(index, element): Insert element at a specific index.
+
+	- remove(element): Remove first occurence of element.
+
+	- You can also append one list to another using append function.
+
+	- extend(list): joins one list with another.
+
+	- delete(index): removes element at index. Does not return anything.
+
+	- pop(index) Same as delete but returns the deleted element.
+
+	- list.reverse(): Reverse the list.
+
+	- sorted(list, reverse): Returns new sorted list. Reverse param is optional to specify ascending or descending order.
+
+	- list.sort(): List sorted and stored in same variable.
+
+	- List can have multiple references. a = [1,2,3,4]  b = a //Both point to same memory location so appending in a will affect b and vice-versa.
+
+	- Negative indexing: -1 index gives you last element of the list.
+
+	- Slicing: list[startIndex:endIndex:step]   step is optional. Gives elements from start to end index. 
+
+2). TUPLES --Immutable but indexable sequence of elements. Except for example if tuple contains a list. You can mmodify the elements of the list.
+
+
+	- t = ('satish')  --- type(t) gives string.
+	
+	- t = ('satish' ,)  -- type(t) gives tuple. Need to put comma in the end in such cases.
+
+	- Slicing:   t[1:4] gives elements 1 to 4 of the tuple t.
+
+ 	- Since tuples are immutable, we cannot remove a single item from it. We can delete the tuple as a whole though.
+
+	- t.index(element) : Returns the index of the first time the element occurs in the tuple.
+
+	- sorted(tuple) : Returns a list with elements in sorted order. In place sorting cannot happen since tuples are immutable.
+
+3). SETS  -- Unordered collection of items. Hence it cannot be indexed but they are mutable. Every item is unique. 
+
+		define a set: {}
+
+		- set.pop()  Removes an element from set in random.
+
+		- s.remove(el) vs s.discard(el): Both remove el if present. Discard does not throw key error if element is not present in set.
+
+		- set union:   set1 | set2   or set1.union(set2)
+
+		- set intersection: set1 & set2  or set1.intersection(set2)
+		
+		- set difference:   set1 - set2
+
+		- symmetric difference:  set1.symmetric_difference(set2)  or set1 ^ set2 = Those elements which are present only in A and B but not both of them. (A union B) - (A int B)
+
+		- Frozen sets: Immutable sets. Once these sets are created, they cannot be modified.
+
+
+4). DICTIONARY -- Dictionary in python is like a hashtable.
+
+		- dict['key'] vs dict.get('key')  : Both fetch the value corresponding to key. Get function return None if key not present, index way throws KeyError.
+
+
+5). STRINGS --   Sequence of Unicode characters. Immutable but indexable.
+
+		- 'l' in 'HelloWorld' returns True.
+
+		- 'or' in 'HelloWorld' returns True.
+
+		- string.upper() -- upper case   string.lower() -- lower case
+
+		- string.split() -- split based on space.
+
+		- ' '.join(str1, str2, ..., strn) -- concatenates string with space.
+
+		- str1.replac(substr1, substr2)  --returns a new string where substr1 is replaced with substr2

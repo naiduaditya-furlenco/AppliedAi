@@ -44,7 +44,6 @@
 	
 6). Python Operators
 
-
 	-Logical: and, or, not
 	
 	-Bitwise ops:  a & b AND
@@ -59,12 +58,4 @@
 	-Membership operator is: Returns true if value present in sequence.	
 			  
 7). If, elif, else condition: 0, none and false are taken as false.	Everything else is considered as true.
-
-				 
-	
-	
-				
-
-
-	
 	
