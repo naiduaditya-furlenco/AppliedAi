@@ -1,0 +1,122 @@
+1). Doc string: String just below function header is called doc string. It is a functon descritpion.
+		Can be found using function_name.__doc__
+
+2). If you don't return anything explicitly, it will return None.
+
+3). Types of functions: i) Built-in  ii) User-defined
+
+	a). abs() : absolute value.
+
+	b). all(): returns true if all elements in an iterable are true. iterable means any D.S. which can be iterated over.
+
+	c). dir():  returns a list of all the attributes and functions available for the argment.
+
+	d). enumerate(): Returns the elements of an iterable D.S. as pairs of (index, element)
+
+	e). filter(functon, iterable): Constructs an iterator from elements of an iterable for which a function return true.
+
+	f). isInstance(object, classinfo): tells if object belongs to classingo or it's sub type.
+
+	g). map(function, iterable). applies a function to each element of the iterable.
+
+	h). reduce(): Performs some computation on a list and returns the result.
+
+	    For example: If you want to find product of all numbers in list.
+
+ 	    def multiply(x, y):
+		return x*y;
+	
+	    product = reduce(multiply, lst)
+	    
+	    HOW IT WORKS: First the reduce will apply multiply on first two elements of the list. Then it will use this results as one input and the subsequent elements
+			  elements as second input and calculate the product.
+
+4). Function arguments:  You can provide default arguments. Once we have a default argument in a function def, all the arguments to it's right must be default.
+
+
+5). def greet(**kwargs):
+	kwargs['name']  kwargs['msg']
+
+   	kwargs means key word arguments. Useful for variable list of arguments for a function.
+
+	Function call: greet(name="Satish", msg="Hello")
+
+6). def greet(*names)    //Gives arguments as tuple. Useful for arbitrary length arguments.
+    
+    Call: greet("satish", "murali", "naveen")
+
+7). Lambda functions:  Also called anonymous functons. They are extensivey used with filter, map and reduce functions.
+
+	double = lambda x: x*2    //Useful for writing short snipets of functions.
+	double(5) gives 10.  
+
+8). Module:  Refers to a file containing Python statement and definitions.
+
+9). For python to consider anything as a package,it must contain __init__.py file.
+    Pyton package is nothing but a directory struture.
+
+    This init file can be empty or it can have some initialization code like loading some modules,declare variables etc,.
+
+10). File Handling:
+
+	- f = open("example.txt")  //Opens a file in current directory. F is called a file handler or a file pointer.
+	- f.close() to close a file. //Not safe as if exception occurs mid programme. Hence better to put this in try catch finally block.
+	- Files modes:
+		a). 'r' -- Read mode (default)
+		b). 'w' -- Write mode. Creates a new file if it does not exist or truncates the file if it exists.
+		c). 'x' -- Open a file for exclusive creation. Operation fails if file already exists.
+		d).  'a' -- open for appending at the end of the file without a truncating. New file created if it does not exist.
+		e). 't'  -- text mode. (default)  //Even 'r' is defauls. 't' just tells in which mode to read or write the file. We use 'rt' or 'wt' to specify that
+			    we need to write in text mode or read in text mode. Other option is binary mode so 'rb' or 'wb' can be specified.
+		f). 'b' -- binary mode.
+		h). '+'  -- open a file for updating (read and write)
+
+	- f.read(4) //Read next 4 charaters. The cursor moves to 5th character and hence if you call read again, it'll start reading from here.
+
+	- f.tell() : Return current cursor location in bytes.
+	
+	- f.seek() : Used to change cursor location.  //f.seek(0) brings the cursor to starting of the file.
+
+	- f.read() //prints entire file.
+	
+	- for line in f print line //Prints file line by line.
+
+	- f.readline(): reads a single line starting from cursor (i.e. upto \n).
+
+	-f.readlines(): reads each line in the file and returns a list of lines.
+
+11). Exception handling:
+	- Exception: Runtime errors are called exceptions. Example division by 0.
+
+	- We have try block and except block ( this is the same as catch block in Java).
+
+	- try:
+
+        - except:  (Catches all exceptions). You can also catch specific exceptions. except(ZeroDivisionError)
+
+	- You can also raise an exception yourself by "raise" keyboard except for python interpreter raising it.
+
+	- Example raise MemoryError("This is memory error"). This is basically throw Exception in java.
+
+	- finally: Written after try except block. No matter what happens, this code is always executed error or no error.
+
+12). Debugging: Used to debug your programme. (Duh!)
+
+	- pdb: Python debugger is an interactive debugging enviroment for python programmes.
+
+	- import pdb
+
+	- To set a breakpoint somewhere in your code: pdb.set_trace().
+
+	- In pdb:
+
+		a). c: continue
+		b). q: quit
+		c). h: help
+		d). list:  Tells where in program we are right now.
+		e). p: print
+		f). p locals(): Prints all local variables.
+		g). p globals(): Prints all global variables.
+
+
+	
