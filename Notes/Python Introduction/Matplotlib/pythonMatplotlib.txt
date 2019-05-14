@@ -1,0 +1,11 @@
+1). Two libraries: pyplot and seaborn.
+
+2). import matplotlib.pyplot as plt
+
+3). For plt.plot function, if you just provide one list, it'll assume it as a sequence of y and plot it with x = 0,1,2,...
+
+4). plt.ploy returns a lines list which can be used to customize each plot on the graph frame. (See multiplot_args_lines.PNG)
+
+5). plt.figure(1): Creates an empty figure frame.
+
+6). plt.subplot(211): Create two subplots(2 rows, 1 column) and use the first subplot. (see subplots_1.PNG and subplots_2.PNG and subplots_figures_switch.PNG)
