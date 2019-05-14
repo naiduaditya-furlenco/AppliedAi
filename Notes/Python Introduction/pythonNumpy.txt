@@ -1,0 +1,106 @@
+1). Numpy is a widely used library.
+
+2). High level number objects: integers, floating point.
+
+3).  Built in containers:  list(costless insertion and append), dictionaries (fast lookup)
+
+4). Numpy provides:
+	1).  Multi-dimensional arrays.
+	2). Closer to hardware implementation (effiiency)
+	3).  designed for scientific computation (conveinience)
+	4). Also known as array oriented computing.
+
+5). np.array([0,1,2,3])  --> Create a numpy 1D array from a list.
+
+6). np.arrange(10) ---> Create a numpy array with 0-9
+
+	OR
+   np.arrange(1, 10, 2) ---> #start, #end, #step  #end is exclusive hence never included in the output.
+
+7). a.shape #prints dimensions of numpy array a.
+
+8). a.ndim #Number of dimensions.
+
+9). for 2D array: Provide list of lists to np.array()
+
+10). Say you have a 2x3 2D numpy array. b.shape will give (2,3). len(b) will give the first dimension i.e. 2. 
+
+11). 1D---> array, 2D ---> matrix, nD ---> Tensor.
+
+12). np.linspace(0, 1, 6)  #Creates a linear space i.e. it divides the line between 0 and 1 into 6 parts.    (#start ,#end ,#number of points)
+
+13). np.ones / np.zeros   --> All 1 or All 0 arrays/matrices/tensors
+
+14). np.eye --> Creates identity matrix.
+
+15). np.diag(list): Creates a 2D matrix with list elements being diagonal elements of the matrix.
+
+16). Basic data types: a.dtype  gives data type of elements of the numpy array.
+
+17).  np.arrange(10, dtype='float64')  #dtype 64bit float. Dot in front of elements means it is a float.
+
+18). Complex numbers also available. 1 + 2j example. dtype returns complex128
+
+19). String, boolean and mny others.
+
+20). Indexing:
+
+	a). Indices begin at 0.
+	b). Rest accessing same as C++ 2D array or whatever.
+
+21) SLICING:
+	a). a = np.arrange(10)
+	b). a[1:8:2] #Gives element from indices 1 to 8 at a step of 2 i.e. 1, 3, 5, 7
+	c). Can also combine slicin with assignment: a[5:] = 10 means upto the end frmo 5th element, all values will become 10.
+
+22). COPIES AND VIEWS:
+	a). a = np.arrange(10)
+	b). b = a[::2]
+	c). np.shares_memory(a, b) return true. For memory efficienty, a[::2] does not create new memory. Only a new view created. So if you update b, a also gets updated.
+	d). Hence to force a copy, c = a[::2].copy()
+	    np.shares_memory(a, c) returns false.
+	e). a[a % 2 == 0]  //Returns all the elements in the array which are even. This is called mask  and it creates deep copy.
+
+	
+23). a = np.array([1,2,3,4])
+     // a + 1 gives [2,3,4,5]
+
+24). All arithmetic operators applied on two lists (Ex. a + b, a*b etc,.) operate elementwise.
+
+25). a*b ---> Element wise matrix multipliation of matrices with same shape.
+
+26). a.dot(b) ---> Normal matrix multiplication of compatibe matrices..	
+
+27). np.array_equals(a, b): Checks if a and b have same elements at corresponding indices.
+
+28). np.sum(arr) ---> returns sum of elements in array
+
+29). np.sum(matrix, axis=0) returns sum of each column. for rowwise sum axis=1
+
+30). arr.min and arr.max return min/max element of arr/matrix. For index, use arr.argmin or arr.argmax
+
+31). np.all(booleanArray) ---> And of all boolean elements
+
+32). np.any(booleanArray) ---> OR of all boolean elements.
+
+33). You can also read data from file to numpy array.
+
+34). Broadcasting (look image)
+
+35). (4,) and (4,1) are not the same dimenstion. Former is that of an array, second is a 2D matrix.
+
+36). To flatten a matrix: a.ravel()
+
+37). To reshape a matrix A:
+	B = A.reshape()  //Both A and B refer to same memory location. So changing B will change A. But sometimes returns a deep copy too so be very careful when using reshape.
+
+38). An array/matrix can be resized using .resize() function. This is not same as reshape becaue resize does in place shape modification. It can also modify data.
+
+	Example. A is matrix of size 4x3
+		  A.reshape(2,6) does not alter A.
+		  A.reshape(10, 2) returns error since 2 elements cannot be reshaped to 20.
+
+		 A.resize(2,6) alters A to 2x6 matrix
+		Also, A.resize(10,2) is allowed. Additional elements are filled with dummy values like 0.
+
+39). np.argsort ---> Sorts the array internally and return the original index of the elements in the sorted order.
