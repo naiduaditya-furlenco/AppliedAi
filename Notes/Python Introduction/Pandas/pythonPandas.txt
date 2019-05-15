@@ -1,0 +1,35 @@
+1). Used to read data and process data.
+
+2). Easy to read csv. read_csv function reads csv data and loads it into a data frame.
+
+3). Suppose you load weather data.
+
+	a). Column max:  df['Temperature'].max()
+	b). Column mean: df['Windspeed'].mean()
+	c). Query for all the days where windspeed > 10: df['EST'][df['WindSpeedMPH'] > 10]
+
+4). Data frame: Used to represent tabular data made of rows and columns.
+
+5). df.shape --> prints shape of df.
+
+6). df.head() / df.tail() --> Prints first or last few rows of the data frame.
+
+7). df.day and df['day'] are equivalent ways to access column.
+
+8). df[[col1, col2]] //Multiple columns
+
+9). df['temperature'].describe gives different statistical parameters of the temperature column.
+
+10). To read excel file: Use package xlrd.
+
+11). To write a df back to csv file, df.to_csv(fileName, index=True/False)
+     //By default this function als prints row index in file.
+
+12). GROUP BY: See images.
+
+13). In case of custom index (see image), you can access rows by row number or your own custom index.  //Note that duplicate indices are also allowed.
+
+	df.loc[46]  //Index value 46
+	df.iloc[3]  //Fetch row no. 3.
+	df.loc[:2]  //Fetch all rows from starting till row with index 2.
+	df.iloc[:2] //Fetch first two rows. 
