@@ -1,0 +1,7 @@
+1). varchar(n): variable length character string with a max length of n.
+
+2). In the output of describe(table), the field key can have values MUL or PRI
+	a). PRI means that the column is a primary key. If two or more columns have values PRI, then all those columns combined form a primary key.
+	b). MUL means that two or more rows can have same values for this column. For example, firstName column will have MUL type as two people can have same first name,
+
+3). SQL is a declarative programming language.

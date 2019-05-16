@@ -1,0 +1,4 @@
+1). Andrew NG course notes
+2), SQL and RDBMS
+3). Algorithm and Datastructures
+4). Course notes of AppliedAi
