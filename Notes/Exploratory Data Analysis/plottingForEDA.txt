@@ -1,0 +1,15 @@
+//Refer to EDA notebook in this project for some examples and useful functions.
+
+
+1). Three types of flowers considered in the iris dataset from the iris family:
+	a). Iris Setosa
+	b). Iris versicolor
+	c). Iris virginica
+
+2). Skewed/Unbalanced classes: When you have too many sample points of one class. Example: Diabetics vs Non diabetics. Total data points: 10,000 but only 200 diabetics, 9800 non-diabetics.
+
+3). You can draw 2-D scatter plots as well as 3D scatter plots.
+
+4). For interactive 3D scatter plots: https://plot.ly/pandas/3d-scatter-plots
+
+5). Pair plots: Used to visualize data in higher dimensions.
