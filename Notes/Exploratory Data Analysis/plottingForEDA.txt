@@ -13,3 +13,30 @@
 4). For interactive 3D scatter plots: https://plot.ly/pandas/3d-scatter-plots
 
 5). Pair plots: Used to visualize data in higher dimensions.
+
+6). You can use pair plots in seaborn to visualize higher dimension data like iris which is a 4-D data.
+
+7). Limitations of pair plots: Number of graphs increases a lot with the dimensions of data. For data of dimension n, number of plots is nC2. Pair plots are useful only if dimensionality of data is very small.
+
+8). 1D scatter plot are very hard to read (Example if you plot petal length on x axis and 0 on y axis. Points overlap a lot for different species.
+
+Better to break it into smaller intervals --- Histogram.
+
+Histogram: y axis is count in the given range.
+
+Use seaborn to plot histograms.8). 1D scatter plot are very hard to read (Example if you plot petal length on x axis and 0 on y axis. Points overlap a lot for different species.
+
+Better to break it into smaller intervals --- Histogram.
+
+Histogram: y axis is count in the given range.
+
+Use seaborn to plot histograms..
+
+9). Probability distribution function: Smoothed version of histogram.
+
+10). Density plots
+
+11). Univariate analysis using probability density function (See video): Plot PDF for each feature on X axis and see if overlaps are there or not
+
+12). Cumulative density functon can be used to estimate prediction accuracy: See image.
+

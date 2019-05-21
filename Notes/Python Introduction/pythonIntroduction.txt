@@ -52,7 +52,7 @@
 	
     -is opertor:  a = 5  b= 5   a is b returns true
 				  a = "aa" b= "aa" a is b return true
-				  a = [1,2,3] b = [1,2,3] a is b returns FALSE
+				  a = [1,2,3] b = [1,2,3] a is b returns FALSE because lists are mutable datatypes so they don't point to the same memory locations. //Use id(variable) to check
 	
 	
 	-Membership operator is: Returns true if value present in sequence.	
