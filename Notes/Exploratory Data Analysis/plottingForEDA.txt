@@ -1,6 +1,6 @@
 //Refer to EDA notebook in this project for some examples and useful functions.
 
-
+IMP: While doing EDA, don't get lost in finding un-necessary patters. Remember what are objective is and try to analyse data to get helpful insights regarding our objective ONLY.
 1). Three types of flowers considered in the iris dataset from the iris family:
 	a). Iris Setosa
 	b). Iris versicolor
@@ -20,17 +20,17 @@
 
 8). 1D scatter plot are very hard to read (Example if you plot petal length on x axis and 0 on y axis. Points overlap a lot for different species.
 
-Better to break it into smaller intervals --- Histogram.
+	Better to break it into smaller intervals --- Histogram.
 
-Histogram: y axis is count in the given range.
+	Histogram: y axis is count in the given range.
 
-Use seaborn to plot histograms.8). 1D scatter plot are very hard to read (Example if you plot petal length on x axis and 0 on y axis. Points overlap a lot for different species.
+	Use seaborn to plot histograms.8). 1D scatter plot are very hard to read (Example if you plot petal length on x axis and 0 on y axis. Points overlap a lot for different species.
 
-Better to break it into smaller intervals --- Histogram.
+	Better to break it into smaller intervals --- Histogram.
 
-Histogram: y axis is count in the given range.
+	Histogram: y axis is count in the given range.
 
-Use seaborn to plot histograms..
+	Use seaborn to plot histograms..
 
 9). Probability distribution function: Smoothed version of histogram.
 
@@ -40,3 +40,38 @@ Use seaborn to plot histograms..
 
 12). Cumulative density functon can be used to estimate prediction accuracy: See image.
 
+13). Mean gets affected too much even by a single outlier.
+
+14). Variance is the measure of spread of data around mean: https://www.investopedia.com/terms/v/variance.asp
+
+15). Standard deviation is square root of variance. Std deviation of a data set means that most of the points in the dataset lie between mean - std and mean + std. 
+
+16) Even std deviation and variance face the same problem, one outlier can corrupt these readings.
+
+17). Median: Sort the dataset, middle element is the median. If dataset has even length, then median is the mean of two middle elements. Median can't be corrupted if number of outliers is small (less than half the dataset size) compared to dataset size.
+
+18). Percentile: A percentile is a measure used in statistics indicating the value below which a given percentage of observations in a group of observations falls. For example, the 20th percentile is the value below which 20% of the observations may be found.
+
+19). Quantiles: Q1, Q2, Q3, Q4 (25th Percentile, 50th percentile, 75th percentile, 100th percentile)
+
+20). Median absolute deviation: (See image). Median of |xi - median| i = 1 to n 
+
+21). Inter quantile range (IQR): Difference between 75th percentilee value and 25th percentile value.
+
+22). Box plot whiskers: 
+	i). Histograms are good for displaying density distribution but they do not show where what percentile happens. You can get percentiles from CDF but are there other ways?
+
+	ii). Width of box-plots has no significance. 
+
+	iii) See boxplot.png
+
+23). Whiskers in box plot can be either min and max, or 1.5 times of IQR. There is no standard way of defining whiskers;
+
+24). The "box" in box plot is IQR since lower range of box is 25 percentile and upper range of box is 75th percentile.
+
+
+25). Violin plots: Box plot + Density plot.
+
+26). 2-D density plots also exist. (See image). 
+
+27). In contour plots, the darkness of a region means that more points are concentrated here compared to a region with lighter shade. Also, along the line of each contour, the count is the same.
