@@ -1,5 +1,6 @@
 //Refer to EDA notebook in this project for some examples and useful functions.
 
+IMP: Types of data in data science: https://towardsdatascience.com/data-types-in-statistics-347e152e8bee
 IMP: While doing EDA, don't get lost in finding un-necessary patters. Remember what are objective is and try to analyse data to get helpful insights regarding our objective ONLY.
 1). Three types of flowers considered in the iris dataset from the iris family:
 	a). Iris Setosa
