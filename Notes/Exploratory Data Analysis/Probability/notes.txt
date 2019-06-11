@@ -1,0 +1,5 @@
+1). Random experiment
+2). Random variable.
+3). Discrete random variable (ex. output of a dice) vs Continuous random variable (example: height of a randomly picked student
+
+4). Outlier
